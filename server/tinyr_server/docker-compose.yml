@@ -1,0 +1,43 @@
+version: '3'
+
+services:
+  db:
+    image: postgres:13
+    container_name: backend_db_1
+    restart: always
+    volumes:
+      - db-data:/var/lib/postgresql/data/
+    environment:
+      - "POSTGRES_HOST_AUTH_METHOD=trust"
+      - POSTGRES_USER=postgres
+      - POSTGRES_PASSWORD=postgres
+      - POSTGRES_DB=postgres
+    ports:
+      - "5432:5432"
+
+  # frontend:
+  #   build:
+  #     context: .
+  #     dockerfile: dockerfile_frontend
+  #   ports:
+  #     - "3000:3000"
+  #   depends_on:
+  #     - backend
+  #   environment:
+  #     - REACT_APP_BACKEND_URL=http://localhost:8000
+
+  backend:
+    build:
+      context: .
+      dockerfile: dockerfile_backend
+    ports:
+      - "8000:8000"
+      - "1883:1883"
+    depends_on:
+      - db
+    environment:
+      - POSTGRES_USER=postgres
+      - POSTGRES_PASSWORD=postgres
+      - POSTGRES_NAME=postgres
+volumes:
+  db-data:
