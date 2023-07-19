@@ -15,16 +15,14 @@ services:
     ports:
       - "5432:5432"
 
-  # frontend:
-  #   build:
-  #     context: .
-  #     dockerfile: dockerfile_frontend
-  #   ports:
-  #     - "3000:3000"
-  #   depends_on:
-  #     - backend
-  #   environment:
-  #     - REACT_APP_BACKEND_URL=http://localhost:8000
+  redis:
+    image: redis:7.0-alpine
+    container_name: backend-redis
+    restart: always
+    volumes:
+      - cache-data:/var/lib/redis/data/
+    ports:
+      - "6379:6379"
 
   backend:
     build:
@@ -35,9 +33,11 @@ services:
       - "1883:1883"
     depends_on:
       - db
+      - redis
     environment:
       - POSTGRES_USER=postgres
       - POSTGRES_PASSWORD=postgres
       - POSTGRES_NAME=postgres
 volumes:
   db-data:
+  redis-data:
