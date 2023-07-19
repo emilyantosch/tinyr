@@ -9,7 +9,7 @@ import datetime
 from itertools import chain
 
 from users.models import User
-from .models import Match
+from matches.models import Match
 from .serializer import MatchSerializer
 
 # Create your views here.

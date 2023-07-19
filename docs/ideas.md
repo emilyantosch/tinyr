@@ -37,4 +37,13 @@
 - Spaces sind ein Feature, angelehnt an die Art, bei der Bumble das macht, bei der man von Anfang an festlegt, nach was genau man sucht. 
     - So könnte man beispielsweise sagen, dass man gerade nur auf Sext aus ist und man so in den NSFW-Bereich wechselt. Hier sind beispielsweise
     die Chatfilter anders und offener als beim Dating, Freunde finden oder beim Netzwerken
-    - 
+- Spaces soll ein Teil des USP sein. Dabei soll es eine zentrale Rolle dabei spielen, wie man mit der App umgehen kann. So soll es beispielsweise immer möglich sein, zwischen den Spaces zu wechseln. Entweder man macht eine "Zoom-Out" Bewegung mit den Fingern und bekommt dann eine Übersicht über die verschiedenen Spaces, oder man wischt einfach nach oben oder nach unten.
+- Die Spaces sind dabei:
+    - Dating -> Entspricht der normalen Vorstellung von Short- oder Longterm-Dating
+    - Freunde finden -> Hier kann man wirklich nur Freunde finden, ohne dass es zu irgendwelchen sexuellen Handlungen kommt.
+    - Netzwerken -> Zum Netzwerken von Arbeitskollegen, Geschäftspartnern oder einfach nur um neue Leute kennenzulernen
+    - NSFW -> Hier sind die meisten Filter deaktiviert und es geht allein darum, zu sexten oder sich für schnellen Sex zu treffen
+    - Penpal -> Hier ist der Radius invertiert, es werden also nur Menschen gefunden, die so und so weit weg sind.
+    - (Events) -> Könnte man zu bestimmten Zeiten im Jahr oder zu Veranstaltungen wie CSD oder Pride aktivieren
+
+     

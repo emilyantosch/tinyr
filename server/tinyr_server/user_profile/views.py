@@ -13,9 +13,9 @@ from datetime import date
 import uuid
 
 from users.models import User
-from .models import UserProfile
+from user_profile.models import UserProfile
 from .serializer import UserProfileSerializer
-
+from matches.models import Match
 # Create your views here.
 
 
